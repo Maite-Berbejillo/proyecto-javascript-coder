@@ -1,0 +1,77 @@
+/*General*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Styles*/
+
+.bg-company-beige {
+    background-color: #F5E8C7 !important;
+}
+
+p {
+    color: #1B2430;
+}
+
+
+main {
+    padding-bottom: 5vh;
+}
+
+.center {
+  text-align: center;
+}
+
+/*Image*/
+
+.image-container {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Make the image responsive */
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Style the button and place it in the middle of the container/image */
+  .image-container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .image-container .btn:hover {
+    background-color: black;
+  }
+
+
+  /* Centered text */
+.centered {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .centered .image-text {
+    font-size: larger;
+    position: relative;
+    text-align: center;
+    color: white;
+    background-color:darkolivegreen;
+  }
+
