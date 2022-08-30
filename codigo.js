@@ -24,6 +24,8 @@ class CartElement {
 const americanDollars = Intl.NumberFormat('en-US');
 
 const products = [];
+
+// Entregable operadores avanzandos *** Ejemplo operador lógico OR 
 let cartElements = JSON.parse(localStorage.getItem("shoppingCart")) || [];
 
 const productContainer = document.getElementById('product-container').getElementsByClassName('row');
@@ -118,10 +120,8 @@ function drawCart () {
     }
 
     //Clear local storage when cart is empty
-
-    if (cartElements.length== 0) {
-        localStorage.clear () ;
-    }
+    // Entregable operadores avanzandos *** Ejemplo operador lógico AND
+    cartElements.length== 0 && localStorage.clear ();
 }
 
 function removeProduct (elementBeingDeleted) {
